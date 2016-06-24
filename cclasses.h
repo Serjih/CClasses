@@ -19,6 +19,12 @@ extern "C" {
 #define method_body_(retType, methodName, ClassName)\
     static retType methodName(ClassName self
 
+
+/* Arguments */
+#define with_(...)                  , __VA_ARGS__)
+#define without_args                )
+
+
 #ifdef __cplusplus
 }
 #endif
