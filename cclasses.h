@@ -5,6 +5,7 @@
 extern "C" {
 #endif
 
+
 /* Class creating */
 #define cclass_(ClassName)          struct _##ClassName##_t;\
                                     typedef struct _##ClassName##_t* ClassName;\
