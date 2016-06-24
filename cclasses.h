@@ -31,7 +31,7 @@ extern "C" {
 #define delete_(ClassName)          delete_##ClassName  // destructor name
 #define constructor_(ClassName)     ClassName new_(ClassName)
 #define destructor_(ClassName)      void delete_(ClassName)(ClassName self)
-#define new_self_(ClassName)        ClassName self = malloc(sizeof (_##ClassName##_t))
+#define new_self_(ClassName)        ClassName self = (ClassName) malloc(sizeof (struct _##ClassName##_t))
 #define init_method_(methodName)    self->methodName = _##methodName
 
 
