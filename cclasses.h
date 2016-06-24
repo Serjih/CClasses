@@ -10,6 +10,8 @@ extern "C" {
                                     typedef struct _##ClassName##_t* ClassName;\
                                     struct _##ClassName##_t
 
+#define extends_(ClassName)         struct _##ClassName##_t;
+
 #ifdef __cplusplus
 }
 #endif
