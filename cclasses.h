@@ -12,6 +12,13 @@ extern "C" {
 
 #define extends_(ClassName)         struct _##ClassName##_t;
 
+
+/* Methods */
+#define method_def_(retType, methodName, ClassName)\
+    retType (*methodName)(ClassName self
+#define method_body_(retType, methodName, ClassName)\
+    static retType methodName(ClassName self
+
 #ifdef __cplusplus
 }
 #endif
