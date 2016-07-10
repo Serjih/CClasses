@@ -11,7 +11,7 @@ extern "C" {
                                     typedef struct _##ClassName##_t* ClassName;\
                                     struct _##ClassName##_t
 
-#define extends_(ClassName)         struct _##ClassName##_t;
+#define extends_(ClassName)         struct _##ClassName##_t
 
 
 /* Methods */
@@ -19,6 +19,7 @@ extern "C" {
     retType (*methodName)(ClassName self
 #define method_body_(retType, methodName, ClassName)\
     static retType _##methodName(ClassName self
+#define throws_(...)
 
 
 /* Arguments */
